@@ -17,6 +17,18 @@ const app = express();
 app.use(cors());          // Allow all origins (simple)
 app.use(express.json());  // Parse JSON body
 
+// Root route for localhost:5000
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Welcome to the Events API',
+    endpoints: {
+      events: '/api/events',
+      health: '/api/health',
+      seed: '/api/events/seed'
+    }
+  });
+});
+
 // Routes
 app.use('/api/events', eventRoutes);
 
