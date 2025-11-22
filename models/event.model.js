@@ -1,3 +1,4 @@
+// models/event.model.js
 const mongoose = require('mongoose');
 
 const EventSchema = new mongoose.Schema({
@@ -23,28 +24,33 @@ const EventSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please add an image URL for the event'],
   },
-  // --- Fields from the Details Page ---
   hostedBy: {
     type: String,
     required: [true, 'Please add who is hosting the event'],
   },
   venue: {
     type: String,
-    required: function() { return this.type === 'Offline'; }, 
+    required: function () {
+      return this.type === 'Offline';
+    },
   },
   address: {
     type: String,
-    required: function() { return this.type === 'Offline'; },
+    required: function () {
+      return this.type === 'Offline';
+    },
   },
   ticketPrice: {
     type: Number,
     required: [true, 'Please add a ticket price'],
     min: 0,
   },
-  speakers: [{
-    name: { type: String, required: true },
-    title: { type: String, required: true }
-  }],
+  speakers: [
+    {
+      name: { type: String, required: true },
+      title: { type: String, required: true },
+    },
+  ],
   description: {
     type: String,
     required: [true, 'Please add a description for the event'],
@@ -67,4 +73,6 @@ const EventSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('Event', EventSchema);
+const Event = mongoose.model('Event', EventSchema);
+
+module.exports = Event;

@@ -1,3 +1,4 @@
+// routes/event.js
 const express = require('express');
 const {
   getEvents,
@@ -5,27 +6,27 @@ const {
   createEvent,
   updateEvent,
   deleteEvent,
-  seedEvents
+  seedEvents,
 } = require('../controllers/eventController');
 
 const router = express.Router();
 
-// Seed database with initial events from the images
+// Seed events
 router.post('/seed', seedEvents);
 
-// Get all events with filtering options
+// Get all events
 router.get('/', getEvents);
 
-// Get a single event by ID
+// Get one event by id
 router.get('/:id', getEvent);
 
-// Create a new event
+// Create event
 router.post('/', createEvent);
 
-// Update an event
+// Update event
 router.put('/:id', updateEvent);
 
-// Delete an event
+// Delete event
 router.delete('/:id', deleteEvent);
 
 module.exports = router;
