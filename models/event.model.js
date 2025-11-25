@@ -49,6 +49,7 @@ const EventSchema = new mongoose.Schema({
     {
       name: { type: String, required: true },
       title: { type: String, required: true },
+      image: { type: String, required: false } // Added speaker image field
     },
   ],
   description: {
