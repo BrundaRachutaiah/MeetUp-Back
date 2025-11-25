@@ -122,7 +122,7 @@ async function seedEvents(req, res) {
         title: 'Tech Conference 2023',
         type: 'Offline',
         date: new Date('2023-07-13'),
-        time: '09:00 AM - 05:00 PM',
+        time: '09:00 AM - 05:00 PM', // AM/PM format
         image: 'https://picsum.photos/seed/techconf/400/300.jpg',
         hostedBy: 'Tech Innovators Inc.',
         venue: 'Convention Center',
@@ -141,7 +141,7 @@ async function seedEvents(req, res) {
           }
         ],
         description:
-          'Join us for a full-day conference on the latest in technology, featuring keynotes from industry leaders. This event will cover emerging technologies including AI, blockchain, quantum computing, and more. Network with professionals from around the world and gain insights into the future of technology. The conference includes keynote speeches, panel discussions, workshops, and networking sessions. Lunch and refreshments will be provided.',
+          'Join us for a full-day conference on the latest in technology, featuring keynotes from industry leaders. This event will cover emerging technologies including AI, blockchain, quantum computing, and more. Network with professionals from around the world and gain insights into the future of technology. The conference includes keynote speeches, panel discussions on ethical tech, hands-on workshops with the latest dev tools, and dedicated networking sessions. A full lunch and coffee breaks are included to fuel your day of innovation and learning.',
         tags: ['Technology', 'Networking', 'Innovation'],
         dressCode: 'Business Formal',
         ageRestriction: '18+',
@@ -150,7 +150,7 @@ async function seedEvents(req, res) {
         title: 'Design Workshop',
         type: 'Offline',
         date: new Date('2023-07-10'),
-        time: '10:00 AM - 04:00 PM',
+        time: '10:00 AM - 04:00 PM', // AM/PM format
         image: 'https://picsum.photos/seed/designwork/400/300.jpg',
         hostedBy: 'Creative Minds',
         venue: 'Art Studio',
@@ -164,7 +164,7 @@ async function seedEvents(req, res) {
           }
         ],
         description:
-          'Hands-on workshop covering modern design principles and tools. Learn from industry experts as they share their experiences and techniques for creating stunning designs. This workshop will cover topics such as color theory, typography, layout design, user experience principles, and design thinking methodology. Participants will work on real-world projects and receive personalized feedback from instructors. All materials will be provided.',
+          'Immerse yourself in a hands-on workshop covering modern design principles and tools. Learn from industry experts as they share their experiences and techniques for creating stunning, user-centric designs. This workshop will cover topics such as color theory, typography, layout design, user experience principles, and design thinking methodology. Participants will work on a real-world project from concept to prototype using industry-standard tools like Figma and Adobe XD. All materials and a gourmet lunch will be provided. Perfect for aspiring designers and seasoned professionals looking to refresh their skills.',
         tags: ['Design', 'UI/UX', 'Workshop'],
         dressCode: 'Smart Casual',
         ageRestriction: '16+',
@@ -173,7 +173,7 @@ async function seedEvents(req, res) {
         title: 'Marketing Seminar',
         type: 'Offline',
         date: new Date('2023-08-15'),
-        time: '10:00 AM - 12:00 PM',
+        time: '10:00 AM - 12:00 PM', // AM/PM format
         image: 'https://picsum.photos/seed/marketsem/400/300.jpg',
         hostedBy: 'Marketing Experts',
         venue: 'Marketing City',
@@ -192,7 +192,7 @@ async function seedEvents(req, res) {
           },
         ],
         description:
-          'An insightful seminar on modern marketing strategies, SEO, and brand growth. This seminar will cover the latest trends in digital marketing, including social media marketing, content marketing, email marketing, and search engine optimization. Learn from industry experts as they share their strategies for building successful marketing campaigns. Participants will receive a certificate of completion and access to exclusive marketing resources.',
+          'An insightful seminar on modern marketing strategies, SEO, and brand growth designed for marketing professionals and business owners. This seminar will cover the latest trends in digital marketing, including social media marketing, content marketing, email marketing, and advanced search engine optimization. Learn from industry experts as they share their strategies for building successful marketing campaigns through real-world case studies. Participants will receive a certificate of completion, access to exclusive marketing resources, and an invitation to a private networking lunch with the speakers.',
         tags: ['Marketing', 'SEO', 'Branding'],
         dressCode: 'Smart Casual',
         ageRestriction: '18 years and above',
@@ -201,7 +201,7 @@ async function seedEvents(req, res) {
         title: 'React Online Summit',
         type: 'Online',
         date: new Date('2023-09-20'),
-        time: '02:00 PM - 06:00 PM GMT',
+        time: '02:00 PM - 06:00 PM GMT', // AM/PM format
         image: 'https://picsum.photos/seed/reactsummit/400/300.jpg',
         hostedBy: 'React Community',
         ticketPrice: 0,
@@ -213,7 +213,7 @@ async function seedEvents(req, res) {
           }
         ],
         description:
-          'A free online summit covering the latest features and best practices in React. This virtual event will bring together React developers from around the world to learn about the latest developments in the React ecosystem. Topics include React hooks, context API, performance optimization, testing, and more. Join live Q&A sessions with React experts and connect with other developers in the community.',
+          'A free online summit bringing together the React community to learn about the latest features and best practices. This virtual event will feature talks from core React team members and community experts on topics including React Hooks, Server Components, Concurrent Features, performance optimization, and state management. Engage in live Q&A sessions, participate in interactive polls, and connect with other developers in dedicated chat rooms. All talks will be recorded and available to attendees after the event.',
         tags: ['React', 'JavaScript', 'Frontend', 'Online'],
         dressCode: 'Casual',
         ageRestriction: 'None',
@@ -222,7 +222,7 @@ async function seedEvents(req, res) {
         title: 'AI & Machine Learning Expo',
         type: 'Offline',
         date: new Date('2023-10-05'),
-        time: '09:30 AM - 06:30 PM',
+        time: '09:30 AM - 06:30 PM', // AM/PM format
         image: 'https://picsum.photos/seed/aiexpo/400/300.jpg',
         hostedBy: 'AI Innovations Lab',
         venue: 'Tech Hub Convention Center',
@@ -246,7 +246,7 @@ async function seedEvents(req, res) {
           }
         ],
         description:
-          'Explore the cutting-edge developments in artificial intelligence and machine learning at this comprehensive expo. Featuring keynote presentations, hands-on workshops, and an exhibition of the latest AI technologies. Learn about neural networks, natural language processing, computer vision, and ethical AI implementation. Network with leading researchers, developers, and business leaders in the AI field. This event is perfect for developers, data scientists, researchers, and business professionals interested in leveraging AI technology.',
+          'Explore the cutting-edge developments in artificial intelligence and machine learning at this comprehensive expo. The event features keynote presentations from leading researchers, hands-on workshops (e.g., "Intro to TensorFlow", "Building Your First NLP Model"), and a large exhibition hall showcasing the latest AI technologies from startups and tech giants. Learn about neural networks, natural language processing, computer vision, and the ethical implementation of AI. Network with leading researchers, developers, and business leaders. Your ticket includes access to all sessions, the exhibition hall, and a networking dinner.',
         tags: ['AI', 'Machine Learning', 'Technology', 'Innovation'],
         dressCode: 'Business Casual',
         ageRestriction: '18+',
@@ -255,7 +255,7 @@ async function seedEvents(req, res) {
         title: 'Startup Pitch Night',
         type: 'Offline',
         date: new Date('2023-11-12'),
-        time: '06:00 PM - 09:00 PM',
+        time: '06:00 PM - 09:00 PM', // AM/PM format
         image: 'https://picsum.photos/seed/startupnight/400/300.jpg',
         hostedBy: 'Entrepreneurship Hub',
         venue: 'Innovation Center',
@@ -274,7 +274,7 @@ async function seedEvents(req, res) {
           }
         ],
         description:
-          'An exciting evening where innovative startups pitch their ideas to a panel of investors and industry experts. Watch as entrepreneurs showcase their groundbreaking business concepts and compete for funding opportunities. This event includes networking sessions where attendees can connect with founders, investors, and business mentors. Whether you\'re an aspiring entrepreneur, investor, or simply interested in the startup ecosystem, this event offers valuable insights into the world of innovation and business development.',
+          'An exciting evening where innovative startups pitch their groundbreaking ideas to a panel of seasoned investors and industry experts. Watch as ten selected entrepreneurs showcase their business concepts and compete for a significant seed funding investment. The event includes networking sessions before and after the pitches where attendees can connect with founders, investors, and business mentors. Whether you\'re an aspiring entrepreneur, an angel investor, or simply interested in the startup ecosystem, this event offers valuable insights and high-energy networking opportunities. Hors d\'oeuvres and drinks will be served.',
         tags: ['Startup', 'Entrepreneurship', 'Pitching', 'Networking'],
         dressCode: 'Business Casual',
         ageRestriction: '21+',
