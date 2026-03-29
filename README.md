@@ -7,7 +7,7 @@ Built with **Node.js**, **Express 5**, and **MongoDB (Mongoose)** — deployed o
 
 ## 🔗 Live API
 
-**Base URL:** `https://frontend-meet-uo.vercel.app/`
+**Base URL:** `https://meet-up-back.vercel.app/`
 
 **Health Check:** `GET /api/health` → `{ "status": "OK" }`
 
