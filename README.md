@@ -16,7 +16,7 @@ Built with **Node.js**, **Express 5**, and **MongoDB (Mongoose)** — deployed o
 ## ⚡ Quick Start
 
 ```bash
-git clone https://github.com/<your-username>/MeetUp-Back.git
+git clone https://github.com/BrundaRachutaiah/MeetUp-Back.git
 cd MeetUp-Back
 npm install
 ```
