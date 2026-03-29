@@ -7,7 +7,7 @@ Built with **Node.js**, **Express 5**, and **MongoDB (Mongoose)** — deployed o
 
 ## 🔗 Live API
 
-**Base URL:** `https://meet-up-back.vercel.app/api`
+**Base URL:** `https://frontend-meet-uo.vercel.app/`
 
 **Health Check:** `GET /api/health` → `{ "status": "OK" }`
 
@@ -19,13 +19,6 @@ Built with **Node.js**, **Express 5**, and **MongoDB (Mongoose)** — deployed o
 git clone https://github.com/<your-username>/MeetUp-Back.git
 cd MeetUp-Back
 npm install
-```
-
-Create a `.env` file in the root:
-
-```env
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
 ```
 
 Start the server:
